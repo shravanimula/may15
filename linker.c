@@ -1,10 +1,11 @@
 #include<stdio.h>
-void Fun();
-int main()
+int sum(int ,int);
+int Main()//linker error
 {
-	fun();
-}
-void Fun()
+	int a=10,b=20;
+	printf("Sum of %d and %d is=%d\n",a,b,sum(a,b));
+}	
+int sum(int a, int b)
 {
-	printf("hello\n");
+	return a+b;
 }
